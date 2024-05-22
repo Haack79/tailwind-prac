@@ -11,7 +11,7 @@ const Card = () => {
             {/* can make image cover whole card if on top do w-full and object-cover on the image*/}
             <Image src="https://via.placeholder.com/150" alt="placeholder" className="w-32 h-32 rounded-full" width={100} height={150}/>
             <div className="ml-6">
-                <h2 className="text-2xl font-bold">John Doe</h2>
+                <h2 className="text-2xl font-bold">Name: John Doe</h2>
                 <p className="text-gray-600">Software Engineer</p>
                 <p className="text-gray-600 text-sm">description</p>
             </div>
