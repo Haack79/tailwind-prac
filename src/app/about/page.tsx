@@ -1,4 +1,6 @@
 import React from 'react'
+import StarRating from '@/components/starRating'
+import ImageSlider from '@/components/ImageSlider'
 
 const page = () => {
   return (
@@ -14,11 +16,15 @@ const page = () => {
                 {/* Sidebar content hidden when small shows when big */}
                 <div className="text-sm mt-6 hidden md:block">  
                     see me when medium to big
+                    <ImageSlider url={"https://picsum.photos/v2/list"} limit={10} page={1}/>
                 </div>
             </div>
             <div className="md:col-span-2 border border-sky-200">
                 <h1 className="text-4xl font-bold text-center bg-slate-100">About</h1>
                 <p className="text-center">This is the about page</p>
+                <div className="flex justify-center">
+                    <StarRating />
+                </div>
             </div>
         </div>
         <div className="flex justify-center mt-5 h-24">bottom elements</div>
