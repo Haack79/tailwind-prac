@@ -1,0 +1,51 @@
+:root {
+    --background: #f0f0f0;
+    --text: #333;
+    --button: #fff;
+    --buttonText: #333;
+    --buttonHover: #e0e0e0; /* Adjusted hover color for better contrast */
+    --buttonHoverText: #333;
+    --button-bg: #000;
+}
+
+[data-theme='dark'] {
+    --background: #000000;
+    --text: #f0f0f0;
+    --button: #000;
+    --buttonText: #f0f0f0;
+    --buttonHover: #222; /* Adjusted hover color for better contrast */
+    --buttonHoverText: #f0f0f0;
+    --button-bg: #fff;
+}
+
+.light-dark-mode {
+    background-color: var(--background);
+    color: var(--text);
+    transition: background-color 0.5s ease, color 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-size: 20px;
+    justify-content: center;
+}
+
+.light-dark-mode p {
+    color: var(--text);
+    font-size: 40px;
+}
+
+.light-dark-mode button {
+    background-color: var(--button-bg);
+    color: var(--buttonText);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.light-dark-mode button:hover {
+    background-color: var(--buttonHover);
+    color: var(--buttonHoverText);
+}
