@@ -27,6 +27,7 @@ const NavBar = () => {
       <Link className="mr-4 md:m-0" href='/accordion'>Accordion</Link>
       <Link className="mr-4 md:m-0" href='/dashboard'>Dashboard</Link>
       <Link className="mr-4 md:m-0" href='/flags'>Flags</Link>
+      <Link className="mr-4 md:m-0" href='/treeview'>TreeView</Link>
     </div>
   )
 }
