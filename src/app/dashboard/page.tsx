@@ -2,6 +2,7 @@ import LoadMoreData from "@/components/LoadMoreData";
 import LightDarkMode from "@/components/LightDarkMode";
 import ScrollIndicator from "@/components/ScrollIndicator";
 import TabTest from "@/components/CustomTabs/TabTest";
+import ModalShow from "@/components/ModalPopUp/ModalShow";
 
 const Dashboard = () => {
     return (
@@ -10,6 +11,7 @@ const Dashboard = () => {
                 {/* <LightDarkMode /> */}
             {/* <ScrollIndicator url={'https://dummyjson.com/products?limit=100'} /> */}
             <TabTest />
+            <ModalShow />
         </div>
     );
 };
