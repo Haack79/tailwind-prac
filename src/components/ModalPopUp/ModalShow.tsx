@@ -19,7 +19,7 @@ const ModalShow = () => {
             {showModal && (
                 <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center">
                     <Modal 
-                        body="Hi, I'm the body" 
+                        body={<div className="bg-green-300 text-orange-400">Hi, I\m the body</div>}
                         header="Hi, I'm the header" 
                         footer="Hi, I'm the footer"
                         onClose={handleCloseModal}

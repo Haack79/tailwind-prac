@@ -1,6 +1,14 @@
 import React from 'react';
 
-const Modal = ({ id, header, body, footer, onClose }: { id?: string, header?: string, body?: string, footer?: string, onClose: () => void }) => {
+interface ModalProps {
+    id?: string;
+    header?: React.ReactNode;
+    body?: React.ReactNode;
+    footer?: React.ReactNode;
+    onClose: () => void;
+  }
+
+const Modal = ({ id, header, body, footer, onClose }: ModalProps) => {
     return (
         <div id={id || 'Modal'} className="bg-white p-4 rounded shadow-lg flex flex-col items-center">
             <div className="w-full flex justify-end">
