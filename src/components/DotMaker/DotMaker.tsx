@@ -6,7 +6,10 @@ const [circles, setCircles] = useState<{ x: number; y: number; }[]>([]);
 
 const addCircle = (event: React.MouseEvent<HTMLDivElement>) => {
     const { offsetX, offsetY } = event.nativeEvent;
-    setCircles([...circles, { x: offsetX, y: offsetY }]);
+    console.log(offsetX, offsetY);
+    if (offsetX - offsetY > 16 || offsetY - offsetX > 16) {
+        setCircles([...circles, { x: offsetX, y: offsetY }]);
+    }
 };
 
 const removeLastCircle = () => {
