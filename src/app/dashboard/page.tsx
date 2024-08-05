@@ -7,6 +7,8 @@ import DotMaker from "@/components/DotMaker/DotMaker";
 import GithubProfileFinder from "@/components/GithubProfileFinder";
 import SearchAutoCompleteAPI from "@/components/SearchAutoCompleteAPI";
 import TicTacToe from "@/components/TicTacToe";
+import FeatureFlagGlobalState from "@/components/FeatureFlag/context/context";
+import FeatureFlags from "@/components/FeatureFlag/FeatureFlag";
 
 const Dashboard = () => {
     return (
@@ -22,6 +24,9 @@ const Dashboard = () => {
                 <SearchAutoCompleteAPI />
             </div>
             <TicTacToe />
+            <FeatureFlagGlobalState>
+                <FeatureFlags />
+            </FeatureFlagGlobalState>
         </div>
     );
 };
