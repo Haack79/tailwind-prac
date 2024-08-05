@@ -4,6 +4,8 @@ import ScrollIndicator from "@/components/ScrollIndicator";
 import TabTest from "@/components/CustomTabs/TabTest";
 import ModalShow from "@/components/ModalPopUp/ModalShow";
 import DotMaker from "@/components/DotMaker/DotMaker";
+import GithubProfileFinder from "@/components/GithubProfileFinder";
+import SearchAutoCompleteAPI from "@/components/SearchAutoCompleteAPI";
 
 const Dashboard = () => {
     return (
@@ -14,6 +16,8 @@ const Dashboard = () => {
             <TabTest />
             <ModalShow />
             <DotMaker />
+            <GithubProfileFinder />
+            <SearchAutoCompleteAPI />
         </div>
     );
 };
