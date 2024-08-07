@@ -12,6 +12,8 @@ import FeatureFlags from "@/components/FeatureFlag/FeatureFlag";
 import UseFetchHookTest from "../hooks/useFetchTest";
 import UseOnclickOutsideTest from "../hooks/useOutsideClickTest";
 import UseWindowResizeText from "../hooks/useWindowResizeText";
+import ScrollToTopAndBottom from "@/components/ScrollToTopAndBottom";
+import ScrollToSection from "@/components/ScrollToSection";
 
 const Dashboard = () => {
     return (
@@ -33,6 +35,8 @@ const Dashboard = () => {
                 <FeatureFlags />
             </FeatureFlagGlobalState> */}
             <UseWindowResizeText />
+            {/* <ScrollToTopAndBottom /> */}
+            <ScrollToSection />
         </div>
     );
 };
