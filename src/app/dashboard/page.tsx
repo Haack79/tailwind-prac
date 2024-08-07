@@ -14,6 +14,7 @@ import UseOnclickOutsideTest from "../hooks/useOutsideClickTest";
 import UseWindowResizeText from "../hooks/useWindowResizeText";
 import ScrollToTopAndBottom from "@/components/ScrollToTopAndBottom";
 import ScrollToSection from "@/components/ScrollToSection";
+import Weather from "@/components/Weather/Weather";
 
 const Dashboard = () => {
     return (
@@ -36,7 +37,8 @@ const Dashboard = () => {
             </FeatureFlagGlobalState> */}
             <UseWindowResizeText />
             {/* <ScrollToTopAndBottom /> */}
-            <ScrollToSection />
+            {/* <ScrollToSection /> */}
+            <Weather />
         </div>
     );
 };

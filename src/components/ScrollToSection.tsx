@@ -28,7 +28,7 @@ const ScrollToSection = () => {
         <button key={i} onClick={() => handleScrollToSection(i)}>Go to {i + 1}</button>
       ))}
       {data.map((dataItem, index) => (
-        <div key={index} ref={(el) => (sectionsRefs.current[index] = el)} style={dataItem.style}>
+        <div key={index} ref={(el) => {sectionsRefs.current[index] = el}} style={dataItem.style}>
           <h3>{dataItem.label}</h3>
         </div>
       ))}
