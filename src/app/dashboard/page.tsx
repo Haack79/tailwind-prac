@@ -9,24 +9,28 @@ import SearchAutoCompleteAPI from "@/components/SearchAutoCompleteAPI";
 import TicTacToe from "@/components/TicTacToe";
 import FeatureFlagGlobalState from "@/components/FeatureFlag/context/context";
 import FeatureFlags from "@/components/FeatureFlag/FeatureFlag";
+import UseFetchHookTest from "../hooks/useFetchTest";
+import UseOnclickOutsideTest from "../hooks/useOutsideClickTest";
 
 const Dashboard = () => {
     return (
         <div className="flex-col items-center justify-center mt-3 w-screen h-screen">
+            <UseOnclickOutsideTest />
             {/* <LoadMoreData /> */}
-                {/* <LightDarkMode /> */}
+            {/* <LightDarkMode /> */}
             {/* <ScrollIndicator url={'https://dummyjson.com/products?limit=100'} /> */}
-            <TabTest />
+            {/* <TabTest />
             <ModalShow />
             <div className="flex flex-row gap-2">
                 <DotMaker />
                 <GithubProfileFinder />
                 <SearchAutoCompleteAPI />
             </div>
+            <UseFetchHookTest />
             <TicTacToe />
             <FeatureFlagGlobalState>
                 <FeatureFlags />
-            </FeatureFlagGlobalState>
+            </FeatureFlagGlobalState> */}
         </div>
     );
 };

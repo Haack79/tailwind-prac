@@ -55,3 +55,28 @@ const LoadMoreData = () => {
 }
 
 export default LoadMoreData;
+/*
+Basic type for count:
+Yes, count being a number (a primitive type) is part of why this works. When you update a primitive state value in React, it doesn't create a new reference, unlike with objects or arrays.
+useCallback:
+Memoizes a callback function.
+Returns a memoized version of the callback that only changes if one of the dependencies has changed.
+Useful for optimizing child component re-renders when passing callbacks.
+Syntax: useCallback(fn, dependencies)
+useMemo:
+Memoizes a value.
+Returns a memoized value that only recomputes when one of the dependencies has changed.
+Useful for expensive calculations.
+Syntax: useMemo(() => computeExpensiveValue(a, b), [a, b])
+The key differences:
+useCallback returns a memoized callback function, while useMemo returns a memoized value.
+Both hooks will recompute their result if any dependency in their dependency array changes.
+useCallback(fn, deps) is equivalent to useMemo(() => fn, deps).
+In both cases, these hooks are checking if any of their dependencies have changed since the last render. If none of the dependencies have changed, they return the memoized value (or function in the case of useCallback) from the previous render.
+They're not specifically checking if a prop or state changes, but rather if any of the values listed in their dependency array have changed. These dependencies can be props, state, or any other values that the memoized function or value depends on.
+Using these hooks helps in performance optimization by avoiding unnecessary re-computations or re-creations of functions, especially in scenarios where equality comparisons of these values or functions might cause unnecessary re-renders of child components.
+https://medium.com/@jan.hesters/usecallback-vs-usememo-c23ad1dc60
+useCallback and useMemo both expect a function and an array of dependencies. 
+The difference is that useCallback returns its function when the dependencies change 
+while useMemo calls its function and returns the result.
+*/
