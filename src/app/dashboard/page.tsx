@@ -11,11 +11,12 @@ import FeatureFlagGlobalState from "@/components/FeatureFlag/context/context";
 import FeatureFlags from "@/components/FeatureFlag/FeatureFlag";
 import UseFetchHookTest from "../hooks/useFetchTest";
 import UseOnclickOutsideTest from "../hooks/useOutsideClickTest";
+import UseWindowResizeText from "../hooks/useWindowResizeText";
 
 const Dashboard = () => {
     return (
         <div className="flex-col items-center justify-center mt-3 w-screen h-screen">
-            <UseOnclickOutsideTest />
+            {/* <UseOnclickOutsideTest /> */}
             {/* <LoadMoreData /> */}
             {/* <LightDarkMode /> */}
             {/* <ScrollIndicator url={'https://dummyjson.com/products?limit=100'} /> */}
@@ -31,6 +32,7 @@ const Dashboard = () => {
             <FeatureFlagGlobalState>
                 <FeatureFlags />
             </FeatureFlagGlobalState> */}
+            <UseWindowResizeText />
         </div>
     );
 };
