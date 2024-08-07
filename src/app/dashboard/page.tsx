@@ -15,6 +15,7 @@ import UseWindowResizeText from "../hooks/useWindowResizeText";
 import ScrollToTopAndBottom from "@/components/ScrollToTopAndBottom";
 import ScrollToSection from "@/components/ScrollToSection";
 import Weather from "@/components/Weather/Weather";
+import Navbar from "@/components/Recipe/NavBar";
 
 const Dashboard = () => {
     return (
@@ -38,7 +39,8 @@ const Dashboard = () => {
             <UseWindowResizeText />
             {/* <ScrollToTopAndBottom /> */}
             {/* <ScrollToSection /> */}
-            <Weather />
+            {/* <Weather /> */}
+            <Navbar />
         </div>
     );
 };
