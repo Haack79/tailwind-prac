@@ -26,7 +26,7 @@ export default function GlobalState({ children }) {
         setRecipeList(data?.data?.recipes);
         setLoading(false);
         setSearchParam("");
-        router.push('/')
+        router.push('/home')
       }
     } catch (e) {
       console.log(e);

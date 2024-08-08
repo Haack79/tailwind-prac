@@ -1,12 +1,13 @@
 'use client'; 
 
 import { useContext, useEffect } from "react";
-import { useRouter } from "next/router";
-import { GlobalContext } from "../../components/Recipe/Context";
+import { useSearchParams, usePathname } from "next/navigation";
+import { GlobalContext } from "../../../components/Recipe/Context"
 
 export default function Details() {
-    const router = useRouter();
-    const { id } = router.query;
+    const pathName = usePathname();
+    const id = pathName.split('/')[2];
+
     const {
         recipeDetailsData,
         setRecipeDetailsData,
@@ -66,8 +67,8 @@ export default function Details() {
             Ingredients:
           </span>
           <ul className="flex flex-col gap-3">
-            {recipeDetailsData?.recipe?.ingredients.map((ingredient) => (
-              <li>
+            {recipeDetailsData?.recipe?.ingredients.map((ingredient, index) => (
+              <li key={index}>
                 <span className="text-2xl font-semibold text-black">
                   {ingredient.quantity} {ingredient.unit}
                 </span>

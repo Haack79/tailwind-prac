@@ -18,12 +18,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
         <GlobalState>
+      <body className={inter.className}>
           <NavBar />
           {children}
-        </GlobalState>
       </body>
+        </GlobalState>
     </html>
   );
 }
