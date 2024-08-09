@@ -16,6 +16,8 @@ import ScrollToTopAndBottom from "@/components/ScrollToTopAndBottom";
 import ScrollToSection from "@/components/ScrollToSection";
 import Weather from "@/components/Weather/Weather";
 import Navbar from "@/components/Recipe/NavBar";
+import ChakraContainer from "@/components/ChakraContainer";
+import ChakraBox from "@/components/ChakraBox";
 
 const Dashboard = () => {
     return (
@@ -41,6 +43,7 @@ const Dashboard = () => {
             {/* <ScrollToSection /> */}
             {/* <Weather /> */}
             <Navbar />
+            <ChakraContainer />
         </div>
     );
 };
