@@ -18,6 +18,7 @@ import Weather from "@/components/Weather/Weather";
 import Navbar from "@/components/Recipe/NavBar";
 import ChakraContainer from "@/components/ChakraContainer";
 import ChakraBox from "@/components/ChakraBox";
+import Table from "@/components/Table";
 
 const Dashboard = () => {
     return (
@@ -43,7 +44,8 @@ const Dashboard = () => {
             {/* <ScrollToSection /> */}
             {/* <Weather /> */}
             <Navbar />
-            <ChakraContainer />
+            {/* <ChakraContainer /> */}
+            <Table />
         </div>
     );
 };

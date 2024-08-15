@@ -28,7 +28,7 @@ function FileUpload() {
       }
 
       const reader = response.body.getReader();
-      const contentLength = +response.headers.get('Content-Length');
+      const contentLength = + response.headers.get('Content-Length');
 
       let receivedLength = 0;
       while (true) {
