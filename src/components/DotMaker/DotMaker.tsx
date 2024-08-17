@@ -10,7 +10,7 @@ const addCircle = (event: React.MouseEvent<HTMLDivElement>) => {
     const circleExists = circles.some((circle) => {
         return offsetX > circle.x - 16 && offsetX < circle.x + 16 && offsetY > circle.y - 16 && offsetY < circle.y + 16;
     });
-//offsetX - offsetY > 16 || offsetY - offsetX > 16
+    //offsetX - offsetY > 16 || offsetY - offsetX > 16
     if (!circleExists) {
         setCircles([...circles, { x: offsetX, y: offsetY}]);
     }

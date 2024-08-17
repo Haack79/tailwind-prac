@@ -10,7 +10,10 @@ const StarRating = () => {
         const { target } = event;
         const boundingClientRect = (target as HTMLElement).getBoundingClientRect();
         let mouseAt = event.clientX - boundingClientRect.left;
+        // get abs() to make sure the value is positive, then round it to the nearest whole number
+        // this ensures that the value is always positive and rounded to the nearest whole number 
         mouseAt = Math.round(Math.abs(mouseAt));
+        // this will return true if the mouse is less than half of the width of the boundingClientRect
         return mouseAt < boundingClientRect.width / 2;
     };
     const handleClick = (event: React.MouseEvent<SVGElement, MouseEvent>, index: number) => {
